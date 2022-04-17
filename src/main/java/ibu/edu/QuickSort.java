@@ -6,6 +6,19 @@ public class QuickSort {
     public static void sort(Comparable[] elements){
 
     }
+
+    private static void sort(Comparable[] elements, int low, int high){
+        Comparable pivot = elements[high];
+
+
+    }
+
+    private void swap(Comparable[] elements, int leftPointer, int rightPointer){
+        Comparable temp = elements[leftPointer];
+        elements[leftPointer] = elements[rightPointer];
+        elements[rightPointer] = temp;
+    }
+
     private void shuffle(Comparable[] elements){
         Random random = new Random();
 
