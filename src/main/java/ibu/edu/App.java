@@ -43,9 +43,9 @@ public class App {
         QuickSort.sort(ipAddressesQuickSort);
 
         for (int a = 0; a < ipAddressesQuickSort.length; a++) {
-            QuickSortFileWriter.write("\"" + QuickSortFileWriter[a].ipFrom + "\"," + "\"" + QuickSortFileWriter[a].ipTo + "\"," + "\"" + QuickSortFileWriter[a].countryCode + "\"," + "\"" + QuickSortFileWriter[a].countryName + "\"," + "\"" + QuickSortFileWriter[a].regionName + "\"," + "\"" + QuickSortFileWriter[a].cityName + "\n");
+            QuickSortFileWriter.write("\"" + ipAddressesQuickSort[a].ipFrom + "\"," + "\"" + ipAddressesQuickSort[a].ipTo + "\"," + "\"" + ipAddressesQuickSort[a].countryCode + "\"," + "\"" + ipAddressesQuickSort[a].countryName + "\"," + "\"" + ipAddressesQuickSort[a].regionName + "\"," + "\"" + ipAddressesQuickSort[a].cityName + "\n");
         }
         QuickSortFileWriter.close();
         System.out.println("Recursive Merge sort completed! Done in " + (System.currentTimeMillis() - start) + " ms");
-
+    }
 }
